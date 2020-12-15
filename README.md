@@ -7,12 +7,12 @@ Tabular data in the form of rows and columns should be archived in its simplest 
 
 Instructions for how to use this reporting format:
 
-CSV reporting format instructions [link]()
+- CSV reporting format instructions [link]()
 
 Other documents:
 
-Detailed Guide to the Elements [link]()
-Quick guide to the Elements [link]()
+- Detailed Guide to the Elements [link]()
+- Quick guide to the Elements [link]()
 
 ## How to contribute
 
