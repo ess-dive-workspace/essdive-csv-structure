@@ -3,22 +3,22 @@
 ## Contents of the Elements 
 
 [File Structure](#file-structure)  
-- [Character Set](#character-set)  
-- [Delimiter](#delimiter)  
-- [Data Matrix](#data-matrix)  
-- [Field Name Row or Column](#field-name-row-or-column)  
+* [Character Set](#character-set)  
+* [Delimiter](#delimiter)  
+* [Data Matrix](#data-matrix)  
+* [Field Name Row or Column](#field-name-row-or-column)  
 
 [Naming Structure](#naming-structure)  
-- [File Name](#file-name)  
-- [Field Names](#field-names)  
-- [Units](#units)  
+* [File Name](#file-name)  
+* [Field Names](#field-names)  
+* [Units](#units)  
 
 [Field Structure](#field-structure)  
-- [Consistent Values](#consistent-values)  
-- [Missing Value Codes](#missing-value-codes)  
-- [Temporal Data](#temporal-data)  
-- [Temporal Data Range](#temporal-data-range)  
-- [Spatial Data](#spatial-data)  
+* [Consistent Values](#consistent-values)  
+* [Missing Value Codes](#missing-value-codes)  
+* [Temporal Data](#temporal-data)  
+* [Temporal Data Range](#temporal-data-range)  
+* [Spatial Data](#spatial-data)  
 
 ---
 
@@ -45,12 +45,12 @@ For commas not meant to be a delimiter (e.g. used within a cell), use a vertical
 
 Cell entries cannot contain a comma (exception listed below). This requirement is necessary for machine readability, as unprotected commas will disrupt the interpretation of columns and rows. Commas in a CSV file are the delimiters and commas in the cell entries should be either replaced or protected/enclosed:  
 - Use a vertical bar "|" instead of a comma  
-&nbsp;&nbsp;-Example  
+&nbsp;&nbsp;*Example  
 &nbsp;&nbsp;&nbsp;&nbsp;Doe|Jane  
 &nbsp;&nbsp;&nbsp;&nbsp;Standing water|ponded
 &nbsp;&nbsp;&nbsp;&nbsp;Area A|Area B|Area C
--Use enclosing quotes around the cell entries containing commas.  
-&nbsp;&nbsp;-Example   
+*Use enclosing quotes around the cell entries containing commas.  
+&nbsp;&nbsp;*Example   
 &nbsp;&nbsp;&nbsp;&nbsp;"Doe, Jane"  
 &nbsp;&nbsp;&nbsp;&nbsp;"Standing water, ponded"  
 &nbsp;&nbsp;&nbsp;&nbsp;“Area A, Area B, Area C”
@@ -106,8 +106,8 @@ Example of a Field Name presented vertically (highlighted) visualized in Excel.
 Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "_". Do not include spaces. Do not start with an underscore or hyphen.
 
 Example:  
-- burned_plot_veg_2016.csv  
-- SoilPoreWaterHillslope2019.csv
+* burned_plot_veg_2016.csv  
+* SoilPoreWaterHillslope2019.csv
 
 ---
 
@@ -118,9 +118,9 @@ Provide unique row or column Field Names that convey basic information about the
 Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).
 
 Examples:  
-&nbsp;&nbsp;&nbsp;&nbsp;- SampleYear  
-&nbsp;&nbsp;&nbsp;&nbsp;- soil_H20  
-&nbsp;&nbsp;&nbsp;&nbsp;- corr_delta13C_stdev  
+&nbsp;&nbsp;&nbsp;&nbsp;* SampleYear  
+&nbsp;&nbsp;&nbsp;&nbsp;* soil_H20  
+&nbsp;&nbsp;&nbsp;&nbsp;* corr_delta13C_stdev  
 
 --- 
 
