@@ -20,7 +20,7 @@ This CSV data reporting format is evolving and growing to meet the needs of the 
 
 If you have any questions about this reporting format, you can also directly email ESS-DIVE support at ess-dive-support@lbl.gov.
 
-Our issue templates were based on those used by the Darwin Core data standard.
+Our issue templates were based on those used by Darwin Core
 
 Darwin Core maintenance group, Biodiversity Information Standards (TDWG) (2014). Darwin Core. Zenodo. https://doi.org/10.5281/zenodo.592792
 
@@ -39,6 +39,7 @@ Velliquette T ; Welch J ; Crow M ; Devarakonda R ; Heinz S ; Crystal-Ornelas R (
 ## References
 
 This recommended CSV file reporting format is based on a combination of existing guidelines and recommendations including some found within the Earth Science Community with additional input from the Environmental Systems Science (ESS) Community. While there are many variants, RFC 4180 (Shafranovich 2005) is commonly treated as the standard. The BADC-CSV format (Pepler & Parton 2009) is a variant of the CSV file format created by the British Atmospheric Data Centre for atmospheric observation data. Similarly, the ASCII format (Evans et al. 2016) can be considered a variant of a CSV file when the content is delimited with a comma. The ASCII format follows RFC 4180, is intuitive, and was created for Earth science data. CSV files are compatible with Unicode and ASCII character sets; however, the EDI recommends ASCII text (256 characters) delimited by tab or comma (EDI 2019).
+
 
 EDI (Environmental Data Initiative). 2019. Five phases of data publishing - Phase 2: Format and QC data tables. https://environmentaldatainitiative.org/five-phases-of-data-publishing/phase-2/
 
