@@ -1,0 +1,134 @@
+# Quick Guide to the CSV Reporting Format Elements
+
+## Contents of the Elements 
+
+[File Structure](#file-structure)  
+* [Character Set](#character-set)  
+* [Delimiter](#delimiter)  
+* [Data Matrix](#data-matrix)  
+* [Field Name Row or Column](#field-name-row-or-column)  
+
+[Naming Structure](#naming-structure)  
+* [File Name](#file-name)  
+* [Field Names](#field-names)  
+* [Units](#units)  
+
+[Field Structure](#field-structure)  
+* [Consistent Values](#consistent-values)  
+* [Missing Value Codes](#missing-value-codes)  
+* [Temporal Data](#temporal-data)  
+* [Temporal Data Range](#temporal-data-range)  
+* [Spatial Data](#spatial-data)  
+
+---  
+
+## File structure  
+
+### Character set
+|Element|Character Set|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement| Use the standard US-ASCII character encoding set without extensions or use UTF-8. |
+|Standard.Description|Use the standard US-ASCII character encoding set without extensions (no characters beyond the 127 characters) or use UTF-8 (which includes the ASCII character set). Most English-language dataset submissions will require only characters included in the standard ASCII character set; however, UTF-8 is useful since it can support non-English characters. A character encoding scheme (e.g. ASCII, UTF-8) is used to map and translate bytes between computers and into human-readable characters. Using either of these character encodings will increase machine readability and interoperability.| 
+|Required or Recommended | recommended |  
+
+
+|Element|Delimiter|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Use a comma as the delimiter while use of other commas must be protected.|
+|Standard.Description|Save tabular data in comma separated values (CSV) format. <br\> The delimiter between columns is the comma character ",". <br\> For commas not meant to be a delimiter (e.g. used within a cell), use a vertical bar "|" instead of a comma or protect the comma with matching double quotation marks around the entire value.|
+|RRequired or Recommended|strongly recommended|
+
+|Element|Data Matrix|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Data portion of the file organized as a matrix of rows and columns with no empty lines and equal number of columns.|
+|Standard.Description|The contents of the data portion of the file must be organized in a logical and readable matrix format. There can be no empty rows and there must be the same number of columns across all of its rows.|
+|Required or Recommended|strongly recommended|
+
+|Element|Field Name Row or Column|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Provide a field name as a row or column.|
+|Standard.Description|The Data Matrix portion of each file should contain a Field Name Row or Column following the description under Field Names. The Field Names will identify the type of information found in that row or column.
+
+The orientation of the Field Name Row or Column in the Data Matrix could be presented:
+1) Horizontally with Field Names at the top of columns or 
+2) Vertically with Field Names starting rows.
+
+Describe the orientation of the Field Name Row or Column within the data matrix of the data file in the File-level metadata.|
+|Required or Recommended|strongly recommended|
+
+|Element|File Name|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Use unique, descriptive file names.|
+|Standard.Description|Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "_". Do not include spaces. Do not start with an underscore or hyphen.|
+|Required or Recommended|strongly recommended|
+
+|Element|Field Names|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Use unique, descriptive row or column names.|
+|Standard.Description|Provide unique row or column Field Names that convey basic information about the contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "_". Do not include spaces. Do not start with an underscore or hyphen.
+
+Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
+|Required or Recommended|strongly recommended|
+
+|Element|Units|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Provide variable units of measurement.|
+|Standard.Description|Provide the units of measurement for the variable in one of the following ways:
+1) immediately below the Field Name as a next row or immediately adjacent to the Field Name as next column; and/or
+2) only in the CSV Data Dictionary (CSV_dd.csv)
+
+Insert "N/A" when units aren't applicable.
+
+Additional information on units should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).
+
+Data should be represented with units of measurement approved by the International System of Units (SI), derived units (e.g., degree Celsius). Non-SI units are accepted for use and should be defined and referenced in the CSV Data Dictionary (CSV_dd.csv). |
+|Required or Recommended|required|
+
+|Element|Consistent Values|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Be consistent within the Field Name Row or Column.|
+|Standard.Description|Text and numeric data must not be used in the same Field Name Row or Column. All data within the Field Name Row or Column must use the same units of measurement.|
+|Required or Recommended|strongly recommended|
+
+|Element|Missing Value Codes|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Use a consistent missing value codes.|
+|Standard.Description|All cells in the data matrix must have a value. Cells with missing data are represented with missing value code. 
+
+For Field Rows or Columns containing numeric data, use "-9999" as the missing value code (or modify to match significant figures given the data). For Field Rows or Columns containing character data, use "N/A" as the missing value code. Missing values must be represented by values that can never be construed as actual data and must be consistent across variables. 
+
+Report all Missing Value Codes in the File-level Metadata whether following the reporting format guidance or using different Missing Value Codes.|
+|Required or Recommended|strongly recommended|
+
+|Element|Temporal Data|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Provide temporal data in UTC format or Local Standard Time with offset.|
+|Standard.Description|This field can be date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date. 
+
+Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DDhh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DDhh).
+
+For timestamped data reported as intervals, specify the interval in the field name or in CSV Data Dictionary (CSV_dd).
+
+Temporal data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to UTC format or Local Standard Time.
+
+In cases where the entire file consists of temporal data collected at a single date and time, the date and time must be reported in the File-level Metadata.|
+|Required or Recommended|recommended|
+
+|Element|Temporal Data Range|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Timestamped data presented as ranges.|
+|Standard.Description|Present range timestamped data as paired fields for start and stop times. 
+
+The field name for timestamped data given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).
+|
+|Required or Recommended|recommended|
+
+|Element|Spatial Data|
+|:----------------------------------------------------|:----------------------------------------------------|
+|Standard.Statement|Provide spatial data in WGS84 decimal format.|
+|Standard.Description|All geographic coordinates must be provided in WGS84 decimal format. Latitude and longitude must be provided as separate variables (i.e., in an adjacent field). For geolocated records, each row in the data matrix must contain coordinates.
+
+Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to WGS84 decimal format.
+
+In cases where the data file does not include geographic coordinates for each row/column in the data matrix and the entire file consists of measurements collected at a single location, the geographic coordinates must be reported in the File-level metadata either as a single point location or bounding box.|
+|Required or Recommended|recommended|
