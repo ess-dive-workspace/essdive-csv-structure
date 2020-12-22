@@ -6,7 +6,7 @@
   a. [Detailed Guide to the Elements](csv_detailed_guide.md)  
   b. [Quick guide to the Elements](csv_quick_guide.md)
 2. If the data are initially saved in a different program (e.g. Excel), comply with the reporting format and check for data inconsistencies or formatting problems once the file is converted to CSV.
-3. Submit a CSV data dictionary following the CSV_dd_instructions [link](WEBLINK).
+3. Submit a CSV data dictionary following the [CSV_dd_instructions](https://github.com/ess-dive-community/essdive-file-level-metadata/blob/main/CSV_dd/CSV_dd_instructions.md).
 
 
 ## Notes
@@ -19,19 +19,20 @@
 
 **Contents of the Elements** 
 
-File Structure
-- Character Set
-- Delimiter
-- Data Matrix
-- Column Header Row
+File Structure  
+* Character Set  
+* Delimiter  
+* Data Matrix  
+* Field Name Row or Column  
 
-Naming Structure
-- File Name
-- Column Headers
-- Units
+Naming Structure  
+* File Name  
+* Field Names  
+* Units  
 
-Field Structure
-- Consistent Values
-- Missing Value Codes
-- Temporal Data
-- Spatial Data
+Field Structure  
+* Consistent Values  
+* Missing Value Codes  
+* Temporal Data    
+* Temporal Data Range    
+* Spatial Data  
