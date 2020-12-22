@@ -32,7 +32,7 @@ The US-ASCII characters include all upper- and lowercase characters, digits, and
 
 Data in a computer is represented and stored as bytes (numeric values). A character encoding scheme (e.g. ASCII, UTF-8) is used to map and translate bytes between computers and into human-readable characters. Using either of these character encodings  will increase machine readability and interoperability.  
 
-## TABLE 1 ##
+![](images/table1.png)  
 Table 1. The ASCII Character Set. Control characters.  
 
 --- 
@@ -59,7 +59,7 @@ If data providers enter their data into programs like Microsoft Excel or Libre O
 
 Example of cell entries separated by commas and protection quotes around “sunny, ponding” as viewed in Notepad++
 
-## NOTEPAD EXAMPLE IMAGE##
+![](images/delimiter.png)
 
 --- 
 
@@ -67,15 +67,15 @@ Example of cell entries separated by commas and protection quotes around “sunn
 
 The contents of the data portion of the file must be organized in a logical and readable matrix format. There can be no empty rows and there must be the same number of columns across all of its rows.  
 
-## ROWS AND COLUMNS##
+![](images/datamatrix1.png)  
 
-Well formatted 
+Well formatted  
 
-## WELL FORMATTED## 
+![](images/datamatrix2.png)  
 
-Not well formatted
+Not well formatted  
 
-## NOT WELL FORMATTED ##
+![](images/datamatrix3.png)  
 
 --- 
 
@@ -91,11 +91,11 @@ Describe the orientation of the Field Name Row or Column within the data matrix 
 
 Example of a Field Name presented horizontally (highlighted) visualized in Excel.
 
-## HEADER ROW EXAMPLE HORIZONTAL ##
+![](images/field_name_row_or_column_1.png)  
 
 Example of a Field Name presented vertically (highlighted) visualized in Excel.
 
-## HEADER COLUMN EXAMPLE## 
+![](images/field_name_row_or_column_2.png)  
 
 --- 
 
@@ -118,9 +118,9 @@ Provide unique row or column Field Names that convey basic information about the
 Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).
 
 Examples:  
-$nbsp;$nbsp;$nbsp;$nbsp;- SampleYear  
-$nbsp;$nbsp;$nbsp;$nbsp;- soil_H20  
-$nbsp;$nbsp;$nbsp;$nbsp;- corr_delta13C_stdev  
+&nbsp;&nbsp;&nbsp;&nbsp;- SampleYear  
+&nbsp;&nbsp;&nbsp;&nbsp;- soil_H20  
+&nbsp;&nbsp;&nbsp;&nbsp;- corr_delta13C_stdev  
 
 --- 
 
@@ -138,7 +138,7 @@ Data should be represented with units of measurement approved by the Internation
 
 Example with units on a second row in the data matrix. Visualized in Excel.  
 
-## UNITS FIGURE IN EXCEL ##
+![](images/units.png)  
 
 ---
 
@@ -150,7 +150,7 @@ Text and numeric data must not be used in the same Field Name Row or Column. All
 
 Example of Inconsistent values. The highlighted cells are inconsistent within the column by mixing in text and symbols. Visualized in Excel.  
 
-## IMAGE OF INCONSISTENT VALUES ## 
+![](images/consistent_values.png)   
 
 --- 
 
@@ -164,7 +164,7 @@ Report all Missing Value Codes in the File-level Metadata whether following the 
 
 Example of using missing value codes in highlighted cells. Visualized in Excel.
 
-## IMAGE OF MISSING VALUE CODES ## 
+![](images/missing_data.png)  
 
 --- 
 
@@ -182,7 +182,7 @@ In cases where the entire file consists of temporal data collected at a single d
 
 ---
 
-#### **Temporal Date Range**  
+#### **Temporal Data Range**  
 Present range timestamped data as paired fields for start and stop times. 
 
 The field name for timestamped data given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).
@@ -196,4 +196,4 @@ Spatial data using different standards can be provided as a separate variable (i
 
 In cases where the data file does not include geographic coordinates for each row/column in the data matrix and the entire file consists of measurements collected at a single location, the geographic coordinates must be reported in the File-level metadata either as a single point location or bounding box.
 
-## WGS84 EXAMPLE ##
+![](images/spatial.png)  
