@@ -36,6 +36,8 @@ Funding for the development of ESS-DIVE's generic comma-separated values (CSV) t
 
 Velliquette T ; Welch J ; Crow M ; Devarakonda R ; Heinz S ; Crystal-Ornelas R (2020): ESS-DIVE Reporting Format for Comma-separated Values (CSV) File Structure. Environmental Systems Science Data Infrastructure for a Virtual Ecosystem. DOI: 10.15485/1734841
 
+McNelis, J., Crow, M., and Devarakonda, R., ESS-DIVE File Level Metadata Extractor. Computer Software. https://code.ornl.gov/ngee-arctic/ess-dive-meta. 01 Oct. 2020. Web. doi:10.11578/dc.20201103.5.  
+
 ## References
 
 This recommended CSV file reporting format is based on a combination of existing guidelines and recommendations including some found within the Earth Science Community with additional input from the Environmental Systems Science (ESS) Community. While there are many variants, RFC 4180 (Shafranovich 2005) is commonly treated as the standard. The BADC-CSV format (Pepler & Parton 2009) is a variant of the CSV file format created by the British Atmospheric Data Centre for atmospheric observation data. Similarly, the ASCII format (Evans et al. 2016) can be considered a variant of a CSV file when the content is delimited with a comma. The ASCII format follows RFC 4180, is intuitive, and was created for Earth science data. CSV files are compatible with Unicode and ASCII character sets; however, the EDI recommends ASCII text (256 characters) delimited by tab or comma (EDI 2019).
