@@ -43,13 +43,15 @@ Save tabular data in comma separated values (CSV) format. The delimiter between 
 
 For commas not meant to be a delimiter (e.g. used within a cell), use a vertical bar "|" instead of a comma or protect the comma with matching double quotation marks around the entire value.  
 
-Cell entries cannot contain a comma (exception listed below). This requirement is necessary for machine readability as unprotected commas will disrupt the interpretation of columns and rows. Commas in a CSV file are the delimiters and commas in the cell entries should be either replaced or protected/enclosed:  
+This requirement is necessary for machine readability as unprotected commas will disrupt the interpretation of columns and rows.
+
+Examples:
 - Use a vertical bar "|" instead of a comma  
 &nbsp;&nbsp;*Example  
 &nbsp;&nbsp;&nbsp;&nbsp;Doe|Jane  
 &nbsp;&nbsp;&nbsp;&nbsp;Standing water|ponded
 &nbsp;&nbsp;&nbsp;&nbsp;Area A|Area B|Area C
-*Use enclosing quotes around the cell entries containing commas.  
+- Use enclosing quotes around the cell entries containing commas.  
 &nbsp;&nbsp;*Example   
 &nbsp;&nbsp;&nbsp;&nbsp;"Doe, Jane"  
 &nbsp;&nbsp;&nbsp;&nbsp;"Standing water, ponded"  
