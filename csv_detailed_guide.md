@@ -133,9 +133,9 @@ Provide the units of measurement for the variable in one of the following ways:
 
 Insert "N/A" when units aren't applicable.  
 
-Additional information on units should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).  
+Report and define additional information on units in the CSV Data Dictionary (CSV_dd.csv).  
 
-Data should be represented with units of measurement approved by the International System of Units (SI), derived units (e.g., degree Celsius). Non-SI units are accepted for use and should be defined and referenced in the CSV Data Dictionary (CSV_dd.csv).  
+Represent data with units of measurement approved by the International System of Units (SI), derived units (e.g., degree Celsius). Non-SI units are accepted for use and should be defined and referenced in the CSV Data Dictionary (CSV_dd.csv).  
 
 Example with units on a second row in the data matrix. Visualized in Excel.  
 
