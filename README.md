@@ -16,7 +16,7 @@ Other documents:
 
 ## How to contribute
 
-This CSV data reporting format is evolving and growing to meet the needs of the community. Feedback and new contributions are welcome. If you would like to suggest a change to the comma-separated values (CSV) data reporting format please submit a GitHub issue using one of the templates we provide.
+This CSV data reporting format is evolving and growing to meet the needs of the community. Feedback and new contributions are welcome. If you would like to suggest a change or report an problem, please submit a GitHub issue using one of the templates we provide.
 
 If you have any questions about this reporting format, you can also directly email ESS-DIVE support at ess-dive-support@lbl.gov.
 
