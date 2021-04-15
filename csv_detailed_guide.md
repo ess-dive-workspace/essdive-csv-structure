@@ -128,7 +128,7 @@ Examples:
 #### **Units**
 
 Provide the units of measurement for the variable in one of the following ways:  
-&nbsp;&nbsp;&nbsp;&nbsp;1. Immediately below the Field Name as a next row or immediately adjacent to the Field Name as next column; and/or
+&nbsp;&nbsp;&nbsp;&nbsp;1. Immediately below the Field Name as a next row or immediately adjacent to the Field Name as next column; and/or  
 &nbsp;&nbsp;&nbsp;&nbsp;2. Only in the CSV Data Dictionary (CSV_dd.csv)
 
 Insert "N/A" when units aren't applicable.  
