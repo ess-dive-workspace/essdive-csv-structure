@@ -30,7 +30,7 @@ Use the standard US-ASCII character set without extensions (no characters beyond
 
 The US-ASCII characters include all upper- and lowercase characters, digits, and common punctuation used in the English language. Most English-language dataset submissions will require only characters included in the standard ASCII character set; however, UTF-8 is useful since it can support non-English characters.  
 
-Data in a computer is represented and stored as bytes (numeric values). A character encoding scheme (e.g. ASCII, UTF-8) is used to map and translate bytes from computers and into human-readable characters. Using either of these character encodings  will increase machine readability and interoperability.  
+Data in a computer is represented and stored as bytes (numeric values). A character encoding scheme (e.g. ASCII, UTF-8) is used to map and translate bytes from computers into human-readable characters. Using either of these character encodings  will increase machine readability and interoperability.  
 
 ![](images/table1.png)  
 Table 1. The ASCII Character Set. Control characters.  
