@@ -106,7 +106,7 @@ Example of a Field Name presented vertically (highlighted) visualized in Excel.
 
 Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "_". Do not include spaces. Do not start with an underscore or hyphen.
 
-Example:  
+Examples:  
 * burned_plot_veg_2016.csv  
 * SoilPoreWaterHillslope2019.csv
 
@@ -119,9 +119,9 @@ Provide unique row or column Field Names that convey basic information about the
 Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).
 
 Examples:  
-&nbsp;&nbsp;&nbsp;&nbsp;* SampleYear  
-&nbsp;&nbsp;&nbsp;&nbsp;* soil_H20  
-&nbsp;&nbsp;&nbsp;&nbsp;* corr_delta13C_stdev  
+* SampleYear  
+* soil_H20  
+* corr_delta13C_stdev  
 
 --- 
 
