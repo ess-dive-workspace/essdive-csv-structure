@@ -56,7 +56,7 @@ Examples:
 &nbsp;&nbsp;&nbsp;&nbsp;"Standing water, ponded"  
 &nbsp;&nbsp;&nbsp;&nbsp;“Area A, Area B, Area C”
 
-If data providers enter their data into programs like Microsoft Excel or Libre Office commas that appear in cells will be detected and protected by quotation marks automatically. Data that are output from models or written in a simple text editor might need quotation marks added to text cells manually.
+If data providers enter their data into programs like Microsoft Excel or Libre Office, commas that appear in cells will be detected and protected by quotation marks automatically. Data that are output from models or written in a simple text editor might need quotation marks added to text cells manually.
 
 Example of cell entries separated by commas and protection quotes around “sunny, ponding” as viewed in Notepad++
 
