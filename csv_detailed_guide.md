@@ -50,6 +50,7 @@ Examples:
 &nbsp;&nbsp;&nbsp;&nbsp;Doe|Jane  
 &nbsp;&nbsp;&nbsp;&nbsp;Standing water|ponded
 &nbsp;&nbsp;&nbsp;&nbsp;Area A|Area B|Area C
+
 - Use enclosing quotes around the cell entries containing commas   
 &nbsp;&nbsp;&nbsp;&nbsp;"Doe, Jane"  
 &nbsp;&nbsp;&nbsp;&nbsp;"Standing water, ponded"  
