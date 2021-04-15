@@ -5,7 +5,7 @@
 1. A tabular data file should meet the minimum criteria as defined in the Elements:  
   a. [Detailed Guide to the Elements](csv_detailed_guide.md)  
   b. [Quick guide to the Elements](csv_quick_guide.md)
-2. If the data are initially saved in a different program (e.g. Excel), comply with the reporting format and check for data inconsistencies or formatting problems once the file is converted to CSV.
+2. If the data are initially saved in a different program (e.g. Excel), comply with the reporting format, convert the file to CSV, and resolve data inconsistencies and/or formatting problems.
 3. Submit a CSV data dictionary following the [CSV_dd_instructions](https://github.com/ess-dive-community/essdive-file-level-metadata/blob/master/CSV_dd/CSV_dd_instructions.md).
 
 
