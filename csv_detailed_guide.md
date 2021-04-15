@@ -157,7 +157,7 @@ Example of Inconsistent values. The highlighted cells are inconsistent within th
 
 #### **Missing Value Codes**  
 
-All cells in the data matrix must have a value. Cells with missing data are represented with a missing value code. 
+All cells in the data matrix must have a value. Cells with missing data are represented with missing value codes. 
 
 For Field Rows or Columns containing numeric data, use "-9999" as the missing value code (or modify to match significant figures given the data). For Field Rows or Columns containing character data, use "N/A" as the missing value code. Missing values must be represented by values that can never be construed as actual data and must be consistent across variables. 
 
