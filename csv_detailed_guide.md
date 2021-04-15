@@ -47,12 +47,10 @@ This requirement is necessary for machine readability as unprotected commas will
 
 Examples:
 - Use a vertical bar "|" instead of a comma  
-&nbsp;&nbsp;*Example  
 &nbsp;&nbsp;&nbsp;&nbsp;Doe|Jane  
 &nbsp;&nbsp;&nbsp;&nbsp;Standing water|ponded
 &nbsp;&nbsp;&nbsp;&nbsp;Area A|Area B|Area C
-- Use enclosing quotes around the cell entries containing commas.  
-&nbsp;&nbsp;*Example   
+- Use enclosing quotes around the cell entries containing commas   
 &nbsp;&nbsp;&nbsp;&nbsp;"Doe, Jane"  
 &nbsp;&nbsp;&nbsp;&nbsp;"Standing water, ponded"  
 &nbsp;&nbsp;&nbsp;&nbsp;“Area A, Area B, Area C”
