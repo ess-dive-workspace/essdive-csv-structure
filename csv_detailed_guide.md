@@ -191,7 +191,7 @@ The field name for timestamped data given as a range should specify if the measu
 ---  
 
 #### **Spatial Data**
-All geographic coordinates must be provided in WGS84 decimal format. Latitude and longitude must be provided as separate variables (i.e., in an adjacent field). For geolocated records, each row in the data matrix must contain coordinates.
+Provide all geographic coordinates in WGS84 decimal format. Provide latitude and longitude as separate variables (i.e., in an adjacent field). For geolocated records, each row in the data matrix must contain coordinates.
 
 Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to WGS84 decimal format.
 
