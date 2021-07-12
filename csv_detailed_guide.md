@@ -173,7 +173,7 @@ Example of using missing value codes in highlighted cells. Visualized in Excel.
 
 This field can be date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date. 
 
-Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DDhh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DDhh).
+Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DD hh).
 
 For timestamped data reported as intervals, specify the interval in the field name or in CSV Data Dictionary (CSV_dd).
 
