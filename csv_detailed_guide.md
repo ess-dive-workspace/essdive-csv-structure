@@ -41,7 +41,7 @@ Table 1. The ASCII Character Set. Control characters.
 
 Save tabular data in comma separated values (CSV) format. The delimiter between columns is the comma character ",".   
 
-For commas not meant to be a delimiter (e.g. used within a cell), use a vertical bar "|" instead of a comma or protect the comma with matching double quotation marks around the entire value.  
+For commas not meant to be a delimiter (e.g. used within a cell), use a vertical bar "|" or semicolon instead of a comma or protect the comma with matching double quotation marks around the entire value.  
 
 This requirement is necessary for machine readability as unprotected commas will disrupt the interpretation of columns and rows.
 
