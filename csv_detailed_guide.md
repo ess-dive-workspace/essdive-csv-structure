@@ -114,12 +114,11 @@ Examples:
 
 #### **Field Names**
 
-Provide unique row or column Field Names that convey basic information about the contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "_". Do not include spaces. Do not start with an underscore or hyphen and recommend not starting with a number.
+Provide unique row or column Field Names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores "_". Do not include spaces or use CamelCase. Do not start with an underscore or hyphen and recommend not starting with a number.
 
 Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).
 
-Examples:  
-* SampleYear  
+Examples:    
 * soil_H20  
 * corr_delta13C_stdev  
 
