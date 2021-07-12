@@ -171,7 +171,7 @@ Example of using missing value codes in highlighted cells. Visualized in Excel.
 
 #### **Temporal Data**
 
-This field can be date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date. 
+This field can be date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date if reported in the same field. If date and time are split between two fields, call one "date" and the other "time.
 
 Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DD hh).
 
@@ -184,7 +184,7 @@ In cases where the entire file consists of temporal data collected at a single d
 ---
 
 #### **Temporal Data Range**  
-Present range timestamped data as paired fields for start and stop times. 
+Present range timestamped data as paired fields for start and stop times "dateTime_start and dateTime_end" or "time_start and time_end". 
 
 The field name for timestamped data given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).
 
