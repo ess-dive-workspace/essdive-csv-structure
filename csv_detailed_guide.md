@@ -184,7 +184,7 @@ In cases where the entire file consists of temporal data collected at a single d
 ---
 
 #### **Temporal Data Range**  
-Present range timestamped data as paired fields for start and stop times "dateTime_start and dateTime_end" or "time_start and time_end". 
+Present range timestamped data as paired fields for start and stop times ("dateTime_start and dateTime_end" or "time_start and time_end"). 
 
 The field name for timestamped data given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).
 
