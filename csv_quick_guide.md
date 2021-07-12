@@ -99,14 +99,14 @@
 |Element|Temporal Data|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Provide temporal data in UTC format or Local Standard Time with offset.|
-|Reporting Format Description|This field can be date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date. Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DDhh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DDhh). For timestamped data reported as intervals, specify the interval in the field name or in CSV Data Dictionary (CSV_dd). Temporal data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to UTC format or Local Standard Time. In cases where the entire file consists of temporal data collected at a single date and time, the date and time must be reported in the File-level Metadata.|
+|Reporting Format Description|This field can be date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date if reported in the same field. If date and time are split between two fields, call one "date" and the other "time". Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DDhh). For timestamped data reported as intervals, specify the interval in the field name or in CSV Data Dictionary (CSV_dd). Temporal data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to UTC format or Local Standard Time. In cases where the entire file consists of temporal data collected at a single date and time, the date and time must be reported in the File-level Metadata.|
 |Required or Recommended|recommended|
 
 ### Temporal data range  
 |Element|Temporal Data Range|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Timestamped data presented as ranges.|
-|Reporting Format Description|Present range timestamped data as paired fields for start and stop times.  The field name for timestamped data given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).|
+|Reporting Format Description|Present range timestamped data as paired fields for start and stop times ("dateTime_start and dateTime_end" or "time_start and time_end").  The field name for timestamped data given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).|
 |Required or Recommended|recommended|
 
 ### Spatial data  
