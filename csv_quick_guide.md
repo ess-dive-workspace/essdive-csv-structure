@@ -67,7 +67,7 @@
 |Element|Field Names|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Use unique, descriptive row or column names.|
-|Reporting Format Description|Provide unique row or column Field Names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores "_". Do not include spaces or use CamelCase. Do not start with an underscore or hyphen and recommend not starting with a number. Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
+|Reporting Format Description|Provide unique row or column Field Names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores "_". Do not include spaces and recommend not using CamelCase. Do not start with an underscore or hyphen and recommend not starting with a number. Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
 |Required or Recommended|strongly recommended|
 
 ### Units  
