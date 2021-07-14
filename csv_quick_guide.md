@@ -35,7 +35,7 @@
 |Element|Delimiter|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Use a comma as the delimiter while use of other commas must be protected.|
-|Reporting Format Description|Save tabular data in comma separated values (CSV) format. The delimiter between columns is the comma character ",". For commas not meant to be a delimiter (e.g. used within a cell), use a vertical bar "|" or a semicolon instead of a comma or protect the comma with matching double quotation marks around the entire value.|
+|Reporting Format Description|Save tabular data in comma separated values (CSV) format. The delimiter between columns is the comma character ",". For commas not meant to be a delimiter (e.g. used within a cell), use a vertical bar "\|" or a semicolon instead of a comma or protect the comma with matching double quotation marks around the entire value.|
 |Required or Recommended|strongly recommended|
 
 ### Data matrix  
