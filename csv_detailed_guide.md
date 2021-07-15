@@ -46,12 +46,12 @@ For commas not meant to be a delimiter (e.g. used within a cell), use a vertical
 This requirement is necessary for machine readability as unprotected commas will disrupt the interpretation of columns and rows.
 
 Examples:
-- Use a vertical bar "|" instead of a comma  
-&nbsp;&nbsp;&nbsp;&nbsp;Doe|Jane  
-&nbsp;&nbsp;&nbsp;&nbsp;Standing water|ponded  
-&nbsp;&nbsp;&nbsp;&nbsp;Area A|Area B|Area C
+- Example using a semicolon ";" instead of a comma  
+&nbsp;&nbsp;&nbsp;&nbsp;Doe; Jane  
+&nbsp;&nbsp;&nbsp;&nbsp;Standing water; ponded  
+&nbsp;&nbsp;&nbsp;&nbsp;Area A; Area B; Area C
 
-- Use enclosing quotes around the cell entries containing commas   
+- Example using enclosed quotes around the cell entries containing commas   
 &nbsp;&nbsp;&nbsp;&nbsp;"Doe, Jane"  
 &nbsp;&nbsp;&nbsp;&nbsp;"Standing water, ponded"  
 &nbsp;&nbsp;&nbsp;&nbsp;“Area A, Area B, Area C”
