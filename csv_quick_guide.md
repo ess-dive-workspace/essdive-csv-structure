@@ -42,7 +42,7 @@
 |Element|Data Matrix|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Data portion of the file organized as a matrix of rows and columns with no empty lines and equal number of columns.|
-|Reporting Format Description|The contents of the data portion of the file must be organized in a logical and readable matrix format. There can be no empty rows and there must be the same number of columns across all of its rows. We recommend that CSV files end with a `newline` character `\n` which indicates to any CSV reader that it has read the end of the CSV file.|
+|Reporting Format Description|The contents of the data portion of the file must be organized in a logical and readable matrix format. There can be no empty rows and there must be the same number of columns across all of its rows. Dataset creators may want to consider ending CSV files with a `newline` character `\n` which indicates to any CSV reader that it has read the end of the CSV file.|
 |Required or Recommended|strongly recommended|
 
 ### Field name row or column  
