@@ -66,7 +66,7 @@ Example of cell entries separated by commas and protection quotes around “sunn
 
 #### **Data Matrix** 
 
-The contents of the data portion of the file must be organized in a logical and readable matrix format. There can be no empty rows and there must be the same number of columns across all of its rows.  However, we recommend that CSV files end with a `newline` character `\n` which indicates to any CSV reader that it has read the end of the CSV file. 
+The contents of the data portion of the file must be organized in a logical and readable matrix format. There can be no empty rows and there must be the same number of columns across all of its rows.  Dataset creators may want to consider ending CSV files with a `newline` character `\n` which indicates to any CSV reader that it has read the end of the CSV file.  
 
 ![](images/datamatrix1.png)  
 
