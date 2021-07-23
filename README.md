@@ -12,7 +12,7 @@ Instructions for how to use this reporting format:
 Other documents:
 
 - [Detailed Guide to the Elements](csv_detailed_guide.md)
-- [Quick guide to the Elements](csv_quick_guide.md)
+- [Quick Guide to the Elements](csv_quick_guide.md)
 
 ## How to contribute
 
