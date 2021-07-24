@@ -6,11 +6,11 @@
 * [Character Set](#character-set)  
 * [Delimiter](#delimiter)  
 * [Data Matrix](#data-matrix)  
-* [Field Name Row or Column](#field-name-row-or-column)  
+* [Column/Row Name Orientation](#column-or-row-name-orientation)  
 
 [Naming Structure](#naming-structure)  
 * [File Name](#file-name)  
-* [Field Names](#field-names)  
+* [Column/Row Name](#column-or-row-names)  
 * [Units](#units)  
 
 [Field Structure](#field-structure)  
@@ -80,21 +80,21 @@ Not well formatted
 
 --- 
 
-#### **Field Name Row or Column**
+#### **Column or Row Name Orientation**
 
-The Data Matrix portion of each file should contain a Field Name Row or Column following the description under Field Names. The Field Names will identify the type of information found in that row or column.
+The Data Matrix portion of each file should contain a header Column or Row that follows the naming conventions listed under the section [Column/Row names](#column-or-row-names). The Column/Row Names will identify the type of information found in that Column or Row.
 
-The orientation of the Field Name Row or Column in the Data Matrix could be presented:  
-&nbsp;&nbsp;&nbsp;&nbsp;1. Horizontally with Field Names at the top of columns or   
-&nbsp;&nbsp;&nbsp;&nbsp;2. Vertically with Field Names starting rows.  
+The orientation of the Column/Row Names in the Data Matrix could be presented:  
+&nbsp;&nbsp;&nbsp;&nbsp;1. Horizontally with Names at the top of each column or   
+&nbsp;&nbsp;&nbsp;&nbsp;2. Vertically with Names at the start of each row.  
 
-Describe the orientation of the Field Name Row or Column within the data matrix of the data file in the File-level metadata.
+Describe the orientation of the header within the data matrix of the data file in the File-level metadata.
 
-Example of a Field Name presented horizontally (highlighted) visualized in Excel.
+Example of a Column Names presented horizontally (highlighted) visualized in Excel.
 
 ![](images/field_name_row_or_column_1.png)  
 
-Example of a Field Name presented vertically (highlighted) visualized in Excel.
+Example of Row Names presented vertically (highlighted) visualized in Excel.
 
 ![](images/field_name_row_or_column_2.png)  
 
@@ -104,7 +104,7 @@ Example of a Field Name presented vertically (highlighted) visualized in Excel.
 
 #### **File Name**
 
-Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "_". Do not include spaces. Do not start with an underscore or hyphen.
+Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "\_". Do not include spaces. Do not start with an underscore or hyphen.
 
 Examples:  
 * burned_plot_veg_2016.csv  
@@ -112,11 +112,11 @@ Examples:
 
 ---
 
-#### **Field Names**
+#### **Column or Row Names**
 
-Provide unique row or column Field Names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores "_". Do not include spaces and recommend not using CamelCase. Do not start with an underscore or hyphen and recommend not starting with a number.
+Provide unique Column or Row Names that convey basic information about the contents of each column or row. Use only letters, numbers, hyphens, and underscores "\_". Do not include spaces and recommend not using CamelCase. Do not start with an underscore or hyphen and recommend not starting with a number.
 
-Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).
+Descriptions of the information found in each column or row should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).
 
 Examples:    
 * soil_H20  
@@ -127,7 +127,7 @@ Examples:
 #### **Units**
 
 Provide the units of measurement for the variable in one of the following ways:  
-&nbsp;&nbsp;&nbsp;&nbsp;1. Immediately below the Field Name as a next row or immediately adjacent to the Field Name as next column; and/or  
+&nbsp;&nbsp;&nbsp;&nbsp;1. Immediately below the Column Name as a next row or immediately adjacent to the Row Name as next column; and/or  
 &nbsp;&nbsp;&nbsp;&nbsp;2. Only in the CSV Data Dictionary (CSV_dd.csv)
 
 Insert "N/A" when units aren't applicable.  
@@ -146,7 +146,7 @@ Example with units on a second row in the data matrix. Visualized in Excel.
 
 #### **Consistent Values**
 
-Text and numeric data must not be used in the same Field Name Row or Column. All data within the Field Name Row or Column must use the same units of measurement.  
+Text and numeric data must not be used within the same Row or the same Column. All data within the Row or Column must use the same units of measurement.  
 
 Example of Inconsistent values. The highlighted cells are inconsistent within the column by mixing in text and symbols. Visualized in Excel.  
 
@@ -176,7 +176,7 @@ Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss)
 
 For timestamped data reported as intervals, specify the interval in the field name or in CSV Data Dictionary (CSV_dd).
 
-Temporal data using different data standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to UTC format or Local Standard Time.
+Temporal data using different data standards can be provided as a separate variable (i.e., in an adjacent column) but only in addition to UTC format or Local Standard Time.
 
 In cases where the entire file consists of temporal data collected at a single date and time, the date and time must be reported in the File-level Metadata.  
 
@@ -194,6 +194,6 @@ Provide all geographic coordinates in WGS84 decimal format. Provide latitude and
 
 Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to WGS84 decimal format.
 
-In cases where the data file does not include geographic coordinates for each row/column in the data matrix and the entire file consists of measurements collected at a single location, the geographic coordinates must be reported in the File-level metadata either as a single point location or bounding box.
+In cases where the data file does not include geographic coordinates for each column/row in the data matrix and the entire file consists of measurements collected at a single location, the geographic coordinates must be reported in the File-level metadata either as a single point location or bounding box.
 
 ![](images/spatial.png)  
