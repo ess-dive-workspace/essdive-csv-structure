@@ -6,11 +6,11 @@
 * [Character Set](#character-set)  
 * [Delimiter](#delimiter)  
 * [Data Matrix](#data-matrix)  
-* [Field Name Row or Column](#field-name-row-or-column)  
+* [Column/Row Name Orientation](#column-or-row-name-orientation)  
 
 [Naming Structure](#naming-structure)  
 * [File Name](#file-name)  
-* [Field Names](#field-names)  
+* [Column/Row Name](#column-or-row-names)  
 * [Units](#units)  
 
 [Field Structure](#field-structure)  
@@ -45,11 +45,11 @@
 |Reporting Format Description|The contents of the data portion of the file must be organized in a logical and readable matrix format. There can be no empty rows and there must be the same number of columns across all of its rows. Dataset creators may want to consider ending CSV files with a `newline` character `\n` which indicates to any CSV reader that it has read the end of the CSV file.|
 |Required or Recommended|strongly recommended|
 
-### Field name row or column  
-|Element|Field Name Row or Column|
+### Column or row name orientation  
+|Element|Column/row name orientation|
 |:----------------------------------------------------|:----------------------------------------------------|
-|Reporting Format Statement|Provide a field name as a row or column.|
-|Reporting Format Description|The Data Matrix portion of each file should contain a Field Name Row or Column following the description under Field Names. The Field Names will identify the type of information found in that row or column. The orientation of the Field Name Row or Column in the Data Matrix could be presented: 1) Horizontally with Field Names at the top of columns or 2) Vertically with Field Names starting rows. Describe the orientation of the Field Name Row or Column within the data matrix of the data file in the File-level metadata.|
+|Reporting Format Statement|Provide a header Column or Row  that describes the type of information found in that Column or Row.|
+|Reporting Format Description|The Data Matrix portion of each file should contain a header Column or Row following the description under  the `column or row names` section. The Column or Row names will identify the type of information found in that Column or Row. The orientation of the header Column or Row in the Data Matrix could be presented: 1) Horizontally with names at the top of columns or 2) Vertically with names starting each row. Describe the orientation of the hear Column or Row within the data matrix of the data file in the File-level metadata.|
 |Required or Recommended|strongly recommended|
 
 ---  
@@ -60,21 +60,21 @@
 |Element|File Name|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Use unique, descriptive file names.|
-|Reporting Format Description|Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "_". Do not include spaces. Do not start with an underscore or hyphen.|
+|Reporting Format Description|Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "\_". Do not include spaces. Do not start with an underscore or hyphen.|
 |Required or Recommended|strongly recommended|
 
-### Field names  
-|Element|Field Names|
+### Column or row names  
+|Element|Column/row names|
 |:----------------------------------------------------|:----------------------------------------------------|
-|Reporting Format Statement|Use unique, descriptive row or column names.|
-|Reporting Format Description|Provide unique row or column Field Names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores "_". Do not include spaces and recommend not using CamelCase. Do not start with an underscore or hyphen and recommend not starting with a number. Descriptions of the information found in the fields should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
+|Reporting Format Statement|Use unique, descriptive Column or Row names.|
+|Reporting Format Description|Provide unique Column or Row names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores "\_". Do not include spaces and we recommend not using CamelCase. Do not start with an underscore or hyphen and we recommend not starting with a number. Descriptions of the information found within each Column or Row should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
 |Required or Recommended|strongly recommended|
 
 ### Units  
 |Element|Units|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Provide variable units of measurement.|
-|Reporting Format Description|Provide the units of measurement for the variable in one of the following ways: 1) immediately below the Field Name as a next row or immediately adjacent to the Field Name as next column; and/or 2) only in the CSV Data Dictionary (CSV_dd.csv) Insert "N/A" when units aren't applicable. Additional information on units should be reported and defined in the CSV Data Dictionary (CSV_dd.csv). Data should be represented with units of measurement approved by the International System of Units (SI), derived units (e.g., degree Celsius). Non-SI units are accepted for use and should be defined and referenced in the CSV Data Dictionary (CSV_dd.csv). |
+|Reporting Format Description|Provide the units of measurement for the variable in one of the following ways: 1) immediately below the Column Name as a next row or immediately adjacent to the Row Name as next column; and/or 2) only in the CSV Data Dictionary (CSV_dd.csv) Insert "N/A" when units aren't applicable. Additional information on units should be reported and defined in the CSV Data Dictionary (CSV_dd.csv). Data should be represented with units of measurement approved by the International System of Units (SI), derived units (e.g., degree Celsius). Non-SI units are accepted for use and should be defined and referenced in the CSV Data Dictionary (CSV_dd.csv). |
 |Required or Recommended|required|  
 
 ---  
@@ -84,29 +84,29 @@
 ### Consistent values  
 |Element|Consistent Values|
 |:----------------------------------------------------|:----------------------------------------------------|
-|Reporting Format Statement|Be consistent within the Field Name Row or Column.|
-|Reporting Format Description|Text and numeric data must not be used in the same Field Name Row or Column. All data within the Field Name Row or Column must use the same units of measurement.|
+|Reporting Format Statement|Be consistent within Column or Row.|
+|Reporting Format Description|Text and numeric data must not be used in the same Column or Row. All data within one Column or Row must use the same units of measurement.|
 |Required or Recommended|strongly recommended|
 
 ### Missing value codes  
 |Element|Missing Value Codes|
 |:----------------------------------------------------|:----------------------------------------------------|
-|Reporting Format Statement|Use a consistent missing value codes.|
-|Reporting Format Description|All cells in the data matrix must have a value. Cells with missing data are represented with missing value code. For Field Rows or Columns containing numeric data, use "-9999" as the missing value code (or modify to match significant figures given the data). For Field Rows or Columns containing character data, use "N/A" as the missing value code. Missing values must be represented by values that can never be construed as actual data and must be consistent across variables. Report all Missing Value Codes in the File-level Metadata whether following the reporting format guidance or using different Missing Value Codes.|
+|Reporting Format Statement|Use consistent missing value codes.|
+|Reporting Format Description|All cells in the data matrix must have a value. Cells with missing data are represented with missing value code. For Columns or Rows containing numeric data, use "-9999" as the missing value code (or modify to match significant figures given the data). For Columns or Rows containing character data, use "N/A" as the missing value code. Missing values must be represented by values that can never be construed as actual data and must be consistent across variables. Report all Missing Value Codes in the File-level Metadata whether following the reporting format guidance or using different Missing Value Codes.|
 |Required or Recommended|strongly recommended|
 
 ### Temporal data
 |Element|Temporal Data|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Provide temporal data in UTC format or Local Standard Time with offset.|
-|Reporting Format Description|This field can be date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date if reported in the same field. If date and time are split between two fields, call one "date" and the other "time". Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DD hh). For timestamped data reported as intervals, specify the interval in the column/row name or in CSV Data Dictionary (CSV_dd). Temporal data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to UTC format or Local Standard Time. In cases where the entire file consists of temporal data collected at a single date and time, the date and time must be reported in the File-level Metadata.|
+|Reporting Format Description|A Column or Row containing temporal data can be date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date if reported in the same columns or row. If date and time are split between two columns, call one "date" and the other "time". Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DD hh). For timestamped data reported as intervals, specify the interval in the column/row name or in CSV Data Dictionary (CSV_dd). Temporal data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to UTC format or Local Standard Time. In cases where the entire file consists of temporal data collected at a single date and time, the date and time must be reported in the File-level Metadata.|
 |Required or Recommended|recommended|
 
 ### Temporal data range  
 |Element|Temporal Data Range|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Timestamped data presented as ranges.|
-|Reporting Format Description|Present range timestamped data as paired columns or rows for start and stop times ("dateTime_start" and "dateTime_end" or "time_start" and "time_end").  The column/row name for timestamped data given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).|
+|Reporting Format Description|Present range timestamped data as paired Columns or Rows for start and stop times ("dateTime_start" and "dateTime_end" or "time_start" and "time_end").  The Column/Row Name for timestamped data given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).|
 |Required or Recommended|recommended|
 
 ### Spatial data  
