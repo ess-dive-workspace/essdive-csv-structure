@@ -85,7 +85,7 @@
 |Element|Consistent Values|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Be consistent within Column or Row.|
-|Reporting Format Description|Text and numeric data must not be used in the same Column or Row. All data within one Column or Row must use the same units of measurement.|
+|All data within the Column or Row must use the same units of measurement. Do not mix text and numeric data within the same Column or Row.|
 |Required or Recommended|strongly recommended|
 
 ### Missing value codes  
