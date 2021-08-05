@@ -146,7 +146,7 @@ Example with units on a second row in the data matrix. Visualized in Excel.
 
 #### **Consistent Values**
 
-All data within the Row or Column must use the same units of measurement. Do not mix text and numeric data within the same Row or Column.  
+All data within the Column or Row must use the same units of measurement. Do not mix text and numeric data within the same Column or Row.  
 
 Example of Inconsistent values. The highlighted cells are inconsistent within the column by mixing in text and symbols. Visualized in Excel.  
 
@@ -156,13 +156,13 @@ Example of Inconsistent values. The highlighted cells are inconsistent within th
 
 #### **Missing Value Codes**  
 
-All cells in the data matrix must have a value. Cells with missing data are represented with missing value codes. 
+All cells in the data matrix must have a value. Cells with missing data are represented with Missing Value Codes. 
 
-For Field Rows or Columns containing numeric data, use "-9999" as the missing value code (or modify to match significant figures given the data). For Field Rows or Columns containing character data, use "N/A" as the missing value code. Missing values must be represented by values that can never be construed as actual data and must be consistent across variables. 
+For Columns or Rows containing numeric data, use "-9999" as the Missing Value Code (or modify to match significant figures given the data). For Columns or Rows containing character data, use "N/A" as the missing value code. Missing values must be represented by values that can never be construed as actual data and must be consistent across variables. 
 
 Report all Missing Value Codes in the File-level Metadata whether following the reporting format guidance or using different Missing Value Codes.
 
-Example of using missing value codes in highlighted cells. Visualized in Excel.
+Example of using Missing Value Codes in highlighted cells. Visualized in Excel.
 
 ![](images/missing_data.png)  
 
