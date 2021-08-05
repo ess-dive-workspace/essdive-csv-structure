@@ -172,7 +172,7 @@ Example of using Missing Value Codes in highlighted cells. Visualized in Excel.
 
 Temporal data can be entered as date only following the ISO 8601 standard (YYYY-MM-DD) and completed to known precision (e.g. YYYY-MM, YYYY). Time is not required, but all times must be preceded by a date if reported in the same field. If date and time are split between two fields, call one "date" and the other "time".
 
-Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DD hh).
+Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level Metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DD hh).
 
 For timestamped data reported as intervals, specify the interval in the field name or in CSV Data Dictionary (CSV_dd).
 
@@ -185,7 +185,7 @@ In cases where the entire file consists of temporal data collected at a single d
 #### **Temporal Data Range**  
 Present the range timestamped data as paired columns or rows for start and stop times (e.g., "dateTime_start" and "dateTime_end" or "time_start" and "time_end"). 
 
-The column/row names for timestamped data that are given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).
+The Column or Row Names for timestamped data that are given as a range should specify if the measurement is the start, stop, or midpoint value, or be explained in the CSV Data Dictionary (CSV_dd).
 
 ---  
 
@@ -194,6 +194,6 @@ Provide all geographic coordinates in WGS84 decimal format. Provide latitude and
 
 Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to WGS84 decimal format.
 
-In cases where the data file does not include geographic coordinates for each column/row in the data matrix and the entire file consists of measurements collected at a single location, the geographic coordinates must be reported in the File-level metadata either as a single point location or bounding box.
+In cases where the data file does not include geographic coordinates for each Column or Row in the data matrix and the entire file consists of measurements collected at a single location, the geographic coordinates must be reported in the File-level Metadata either as a single point location or bounding box.
 
 ![](images/spatial.png)  
