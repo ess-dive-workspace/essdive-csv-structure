@@ -60,14 +60,14 @@
 |Element|File Name|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Use unique, descriptive file names.|
-|Reporting Format Description|Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores "\_". Do not include spaces. Do not start with an underscore or hyphen.|
+|Reporting Format Description|Provide unique file names that are as descriptive as possible about the file contents. Use only letters (e.g. CamelCase), numbers, hyphens, and underscores. Do not include spaces. Do not start with an underscore or hyphen.|
 |Required or Recommended|strongly recommended|
 
 ### Column or row names  
 |Element|Column or row names|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Use unique, descriptive Column or Row names.|
-|Reporting Format Description|Provide unique Column or Row names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores "\_". Do not include spaces and we recommend not using CamelCase. Do not start with an underscore or hyphen and we recommend not starting with a number. Descriptions of the information found within each Column or Row should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
+|Reporting Format Description|Provide unique Column or Row names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores. Do not include spaces and we recommend not using CamelCase. Do not start with an underscore or hyphen and we recommend not starting with a number. Descriptions of the information found within each Column or Row should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
 |Required or Recommended|strongly recommended|
 
 ### Units  
