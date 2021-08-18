@@ -6,11 +6,11 @@
 * [Character Set](#character-set)  
 * [Delimiter](#delimiter)  
 * [Data Matrix](#data-matrix)  
-* [Column/Row Name Orientation](#column-or-row-name-orientation)  
+* [Column or Row Name Orientation](#column-or-row-name-orientation)  
 
 [Naming Structure](#naming-structure)  
 * [File Name](#file-name)  
-* [Column/Row Name](#column-or-row-names)  
+* [Column or Row Names](#column-or-row-names)  
 * [Units](#units)  
 
 [Field Structure](#field-structure)  
@@ -46,7 +46,7 @@
 |Required or Recommended|strongly recommended|
 
 ### Column or row name orientation  
-|Element|Column/row name orientation|
+|Element|Column or row name orientation|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Provide a header Column or Row  that describes the type of information found in that Column or Row.|
 |Reporting Format Description|The Data Matrix portion of each file should contain a header Column or Row following the description under  the `column or row names` section. The Column or Row names will identify the type of information found in that Column or Row. The orientation of the header Column or Row in the Data Matrix could be presented: 1) Horizontally with names at the top of columns or 2) Vertically with names starting each row. Describe the orientation of the hear Column or Row within the data matrix of the data file in the File-level Metadata.|
@@ -64,7 +64,7 @@
 |Required or Recommended|strongly recommended|
 
 ### Column or row names  
-|Element|Column/row names|
+|Element|Column or row names|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Use unique, descriptive Column or Row names.|
 |Reporting Format Description|Provide unique Column or Row names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores "\_". Do not include spaces and we recommend not using CamelCase. Do not start with an underscore or hyphen and we recommend not starting with a number. Descriptions of the information found within each Column or Row should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
