@@ -23,11 +23,11 @@ File Structure
 * Character Set  
 * Delimiter  
 * Data Matrix  
-* Column/Row Name Orientation
+* Column or Row Name Orientation
 
 Naming Structure  
 * File Name  
-* Column/Row Names  
+* Column or Row Names  
 * Units  
 
 Field Structure  
