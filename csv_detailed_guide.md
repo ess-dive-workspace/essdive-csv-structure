@@ -6,11 +6,11 @@
 * [Character Set](#character-set)  
 * [Delimiter](#delimiter)  
 * [Data Matrix](#data-matrix)  
-* [Column/Row Name Orientation](#column-or-row-name-orientation)  
+* [Column or Row Name Orientation](#column-or-row-name-orientation)  
 
 [Naming Structure](#naming-structure)  
 * [File Name](#file-name)  
-* [Column/Row Name](#column-or-row-names)  
+* [Column or Row Name](#column-or-row-names)  
 * [Units](#units)  
 
 [Field Structure](#field-structure)  
@@ -114,7 +114,7 @@ Examples:
 
 #### **Column or Row Names**
 
-Provide unique Column or Row Names that convey basic information about the contents of each column or row. Use only letters, numbers, hyphens, and underscores "\_". Do not include spaces and recommend not using CamelCase. Do not start with an underscore or hyphen and recommend not starting with a number.
+Provide unique Column or Row Names that convey basic information about the contents of each column or row. Use only letters, numbers, hyphens, and underscores. Do not include spaces and recommend not using CamelCase. Do not start with an underscore or hyphen and recommend not starting with a number.
 
 Descriptions of the information found in each column or row should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).
 
