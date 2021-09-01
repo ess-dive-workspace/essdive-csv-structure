@@ -88,7 +88,7 @@ The orientation of the Column/Row Names in the Data Matrix could be presented:
 &nbsp;&nbsp;&nbsp;&nbsp;1. Horizontally with Names at the top of each column or   
 &nbsp;&nbsp;&nbsp;&nbsp;2. Vertically with Names at the start of each row.  
 
-We recommend that you describe the orientation of the data matrix under these header columns/rows as "horizontal" or "vertical" under the "Data_Orientation" section of the file-level metadata template.  
+We recommend that you describe the orientation of the data matrix as "horizontal" or "vertical" under the "Data_Orientation" section of the file-level metadata template.  
 
 Example of a Column Names presented horizontally (highlighted) visualized in Excel.  
 
