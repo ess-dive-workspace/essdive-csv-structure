@@ -66,7 +66,7 @@
 ### Column or Row Names  
 |Element|Column or Row Names|
 |:----------------------------------------------------|:----------------------------------------------------|
-|Reporting Format Statement|Use unique, descriptive Column or Row names.|
+|Reporting Format Statement|Use unique, descriptive Column or Row Names.|
 |Reporting Format Description|Provide unique Column or Row names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores. Do not include spaces and we recommend not using CamelCase. Do not start with an underscore or hyphen and we recommend not starting with a number. Descriptions of the information found within each Column or Row should be reported and defined in the CSV Data Dictionary (CSV_dd.csv).|
 |Required or Recommended|strongly recommended|
 
