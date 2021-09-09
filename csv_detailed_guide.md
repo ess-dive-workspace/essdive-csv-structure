@@ -148,7 +148,7 @@ Example with units on a second row in the data matrix. Visualized in Excel.
 
 All data within the Column or Row must use the same units of measurement. Do not mix text and numeric data within the same Column or Row.  
 
-Example of Inconsistent values. The highlighted cells are inconsistent within the column by mixing in text and symbols. Visualized in Excel.  
+Example of inconsistent values. The highlighted cells are inconsistent within the column by mixing in text and symbols. Visualized in Excel.  
 
 ![](images/consistent_values.png)   
 
