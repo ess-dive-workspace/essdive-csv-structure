@@ -174,7 +174,7 @@ Temporal data can be entered as date only following the ISO 8601 standard (YYYY-
 
 Times must be reported in Coordinated Universal Time (UTC) (YYYY-MM-DD hh:mm:ss) (use of "Z" and "T" characters are unnecessary) or Local Standard Time reporting offset or time zone in the File-level Metadata. Do not report time using Daylight Savings Time. Complete times to known precision (e.g. YYYY-MM-DD hh).
 
-For timestamped data reported as intervals, specify the interval in the field name or in CSV Data Dictionary (CSV_dd).
+For timestamped data reported as intervals, specify the interval in the Column or Row Name or in CSV Data Dictionary (CSV_dd).
 
 Temporal data using different data standards can be provided as a separate variable (i.e., in an adjacent column) but only in addition to UTC format or Local Standard Time.
 
@@ -189,7 +189,7 @@ The Column or Row Names for timestamped data that are given as a range should sp
 
 ---  
 
-#### **Spatial Data**
+#### **Spatial Data**  
 Provide all geographic coordinates in WGS84 decimal format. Provide latitude and longitude as separate variables (i.e., in an adjacent field). For geolocated records, each row in the data matrix must contain coordinates.
 
 Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to WGS84 decimal format.
