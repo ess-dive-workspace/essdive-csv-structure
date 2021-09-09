@@ -82,7 +82,7 @@ Not well formatted
 
 #### **Column or Row Name Orientation**
 
-The Data Matrix portion of each file should contain a header Column or Row that follows the naming conventions listed under the section *Column or Row Names*. The Column/Row Names will identify the type of information found in that Column or Row.
+The Data Matrix portion of each file should contain a header Column or Row that follows the naming conventions listed under the section *Column or Row Names*. The Column or Row Names will identify the type of information found in that Column or Row.
 
 The orientation of the Column/Row Names in the Data Matrix could be presented:  
 &nbsp;&nbsp;&nbsp;&nbsp;1. Horizontally with Names at the top of each column or   
