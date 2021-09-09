@@ -10,7 +10,7 @@
 
 [Naming Structure](#naming-structure)  
 * [File Name](#file-name)  
-* [Column or Row Name](#column-or-row-names)  
+* [Column or Row Names](#column-or-row-names)  
 * [Units](#units)  
 
 [Field Structure](#field-structure)  
