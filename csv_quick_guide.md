@@ -49,7 +49,7 @@
 |Element|Column or Row Name Orientation|
 |:----------------------------------------------------|:----------------------------------------------------|
 |Reporting Format Statement|Provide a header Column or Row that describes the type of information found in that Column or Row.|
-|Reporting Format Description|The Data Matrix portion of each file should contain a header Column or Row following the description under the "Column or Row Names" section. The Column or Row names will identify the type of information found in that Column or Row. The orientation of the header Column or Row in the Data Matrix could be presented: 1) Horizontally with names at the top of columns or 2) Vertically with names starting each row. You can describe this orientation of the data within your data matrix under Data_Orientation in the File-level Metadata templates.|
+|Reporting Format Description|The Data Matrix portion of each file should contain a header Column or Row following the description under the "Column or Row Names" section of this reporting format. The Column or Row names will identify the type of information found in that Column or Row. Tabular data can be organized: 1) **Horizontally** meaning that data are organized in rows and there's a new name describing the data at the start of every row 2) **Vertically** meaning that data are organized in columns and there is a new column name describing the data at the top of every column. You can describe this orientation of the data within your data matrix under Data_Orientation in the File-level Metadata templates.|
 |Required or Recommended|strongly recommended|
 
 ---  
