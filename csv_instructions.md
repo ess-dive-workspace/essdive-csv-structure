@@ -6,8 +6,8 @@
   a. [Detailed Guide to the Elements](csv_detailed_guide.md)  
   b. [Quick guide to the Elements](csv_quick_guide.md)
 2. If the data are initially saved in a different program (e.g. Excel), comply with the reporting format, convert the file to CSV, and resolve data inconsistencies and/or formatting problems.
-3. Submit a companion CSV data dictionary following the [CSV_dd_instructions](https://github.com/ess-dive-community/essdive-file-level-metadata/tree/master/CSV_dd).
-
+3. Submit a companion CSV data dictionary following the [CSV_dd_instructions](https://github.com/ess-dive-workspace/essdive-file-level-metadata/tree/main/CSV_dd).
+4. Within the FLMD file, the [standard](https://github.com/ess-dive-workspace/essdive-file-level-metadata/blob/main/flmd_quick_guide.md#standard) for each CSV guidelines reporting format related file should be **ESS-DIVE CSV v1**. If submitting your dataset to ESS-DIVE, include the keyword **ESS-DIVE CSV File Formatting Guidelines Reporting Format** in the package-level metadata.
 
 ## Notes
 
