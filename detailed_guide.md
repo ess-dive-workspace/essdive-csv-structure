@@ -58,7 +58,7 @@ Examples:
 
 If data providers enter their data into programs like Microsoft Excel or Libre Office, commas that are used within cells will be detected and protected by quotation marks automatically. Data that are output from models or written in a simple text editor might need quotation marks added to text cells manually.
 
-Example of cell entries separated by commas and protection quotes around “sunny, ponding” as viewed in Notepad++
+Example of cell entries separated by commas and protection quotes around “sunny, ponding” as viewed in a text reader (e.g., Notepad++)
 
 ![](images/delimiter.png)
 
@@ -72,11 +72,11 @@ Dataset creators may want to consider ending CSV files with a `newline` characte
 
 ![](images/datamatrix1.png)  
 
-Well formatted  
+Well formatted visualized in a spreadsheet like MS Excel 
 
 ![](images/datamatrix2.png)  
 
-Not well formatted  
+Not well formatted visualized in a spreadsheet like MS Excel  
 
 ![](images/datamatrix3.png)  
 
@@ -84,7 +84,7 @@ Not well formatted
 
 #### **Column or Row Name Orientation**
 
-The Data Matrix portion  (i.e., tabular data section) of each file should contain a header Column or Row that follows the naming conventions listed under the section *Column or Row Names*. The Column or Row Names will identify the type of information found in that Column or Row.
+The Data Matrix portion  (i.e., tabular data section) of each file should contain a header Column or Row following the specification in the “Column or Row Names” section of this reporting format. Column or row names may contain information about the content in the column or row.
 
 The orientation of the Column/Row Names in the Data Matrix could be presented:  
 &nbsp;&nbsp;&nbsp;&nbsp;1. Horizontally with Names at the top of each column or   
@@ -92,11 +92,11 @@ The orientation of the Column/Row Names in the Data Matrix could be presented:
 
 If following the [File Level Metadata reporting format](https://github.com/ess-dive-workspace/essdive-file-level-metadata/), we recommend that you specify the column or row name orientation within the `data_orientation` term.  
 
-Example of Column Names presented horizontally (highlighted) visualized in Excel.  
+Example of Column Names presented horizontally (highlighted) visualized in a spreadsheet like MS Excel.  
 
 ![](images/field_name_row_or_column_1.png)  
 
-Example of Row Names presented vertically (highlighted) visualized in Excel.  
+Example of Row Names presented vertically (highlighted) visualized in a spreadsheet like MS Excel.  
 
 ![](images/field_name_row_or_column_2.png)  
 
@@ -129,12 +129,12 @@ Examples:
 #### **Units**
 
 Provide the units of measurement for the variable in one of the following ways:
-- within the `unit` term from the [File Level Metadata Reporting Format’s Data Dictionary file](https://github.com/ess-dive-workspace/essdive-file-level-metadata/blob/main/data_dictionary_dd/term_guide.md#unit)
+- (recommended) within the `unit` term from the [File Level Metadata Reporting Format’s Data Dictionary file](https://github.com/ess-dive-workspace/essdive-file-level-metadata/blob/main/data_dictionary_dd/term_guide.md#unit)
 - immediately below the Column Name as the next row or immediately adjacent to the Row Name as the next column
 
 We recommend that you include units within the unit term in the Data Dictionary file; however, units can be included within the data file if necessary.
 
-Example with units on a second row in the data matrix. Visualized in Excel.  
+Example with units on a second row in the data matrix. Visualized in a spreadsheet like MS Excel.  
 
 ![](images/units.png)  
 
@@ -146,7 +146,7 @@ Example with units on a second row in the data matrix. Visualized in Excel.
 
 All data within the Column or Row must use the same units of measurement. Do not mix text and numeric data within the same Column or Row.
 
-Example of inconsistent values. The highlighted cells are inconsistent within the column by mixing in text and symbols. Visualized in Excel.
+Example of inconsistent values. The highlighted cells are inconsistent within the column by mixing in text and symbols. Visualized in a spreadsheet like MS  Excel.
 
 ![](images/consistent_values.png)   
 
@@ -157,12 +157,12 @@ Example of inconsistent values. The highlighted cells are inconsistent within th
 All cells in the data matrix must have a value. Cells with missing data are represented with Missing Value Codes.
 
 If you are unclear on what missing value code to use for your data, we recommend using: 
-    - "-9999" as the missing value code (or modify to match significant figures given the data) for Columns or Rows containing numeric data. 
-    - “N/A” as the missing value code for Columns or Rows containing character data.
+- "-9999" as the missing value code (or modify to match significant figures given the data) for Columns or Rows containing numeric data. 
+- “N/A” as the missing value code for Columns or Rows containing text data.
 
 If following the [File Level Metadata reporting format](https://github.com/ess-dive-workspace/essdive-file-level-metadata/), we recommend that you report all missing value codes in the `missing_value_code` term within the Data Dictionary file.
 
-Example of using Missing Value Codes in highlighted cells. Visualized in Excel.
+Example of using Missing Value Codes in highlighted cells. Visualized in a spreadsheet like MS Excel.
 
 ![](images/missing_data.png)  
 
@@ -188,10 +188,10 @@ The Column or Row Names for timestamped data that are given as a range should sp
 ---  
 
 #### **Spatial Data**  
-Provide all geographic coordinates in WGS84 decimal format. Provide latitude and longitude as separate variables (i.e., in an adjacent field).
+We recommend that spatial data be provided following the [ESS-DIVE Location Metadata reporting format](https://github.com/ess-dive-workspace/essdive-location-metadata) when possible.
 
-Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to WGS84 decimal format. For any coordinates not provided in WGS84, a datum must be specified within a data dictionary file.
-
-For more specific guidance on providing spatial data and location metadata, review the [ESS-DIVE Location Metadata reporting format](https://github.com/ess-dive-workspace/essdive-location-metadata).
+In all other cases where the Location Metadata reporting format is not appropriate, the following guidance applies:
+- Provide all geographic coordinates in WGS84 decimal format. Provide latitude and longitude as separate variables (i.e., in an adjacent field).
+- Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field) but only in addition to WGS84 decimal format. For any coordinates not provided in WGS84, a datum must be specified within a data dictionary file.
 
 ![](images/spatial.png)  
