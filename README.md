@@ -1,22 +1,19 @@
-# ESS-DIVE Reporting Format for Comma-separated Values (CSV) File Structure v1.0.1
+# ESS-DIVE Reporting Format for Comma-separated Values (CSV) File Structure v1.1.0
 
-Tabular data in the form of rows and columns should be archived in its simplest form. Submit these data following the ESS-DIVE Reporting Format for Comma-separated Values (CSV) File Structure. The CSV reporting format is more likely accessible by future systems over a proprietary format and is preferred because this format is easier to exchange between different programs increasing the interoperability of the data file. Defining the reporting format and structure of the CSV file and some field content increases the machine-readability of the data file for extracting, compiling, and comparing the data across files and systems. 
+Tabular data in the form of rows and columns should be archived in its simplest form. Submit these data following the ESS-DIVE Reporting Format for Comma-separated Values (CSV) File Structure. The CSV reporting format is more likely accessible by future systems over a proprietary format and is preferred because this format is easier to exchange between different programs increasing the interoperability of the data file. Defining the reporting format and structure of the CSV file and some field content increases the machine-readability of the data file for extracting, compiling, and comparing the data across files and systems.
  
 
 ## Getting started
-
-Instructions for how to use this reporting format:
-
-- [CSV reporting format instructions](csv_instructions.md)
-
-Other documents:
-
-- [Detailed Guide to the Elements](csv_detailed_guide.md)
-- [Quick Guide to the Elements](csv_quick_guide.md)
+1. **Read** the instruction document to understand the key requirements of this reporting format.
+2. **Review** the detailed guide for specific guidance and examples. **Review** the quick guide for high-level guidance.
 
 ---
-## Updates in v1.0.1 
-In March 2025, a patch version of the CSV File Formatting Guidelines reporting format was made to improve the overall experience with the associated reporting format documentation. Additionally, the standard reporting format keyword and standard term were added to the csv_instructions.md file.
+## Updates in v1.1.0 
+The CSV reporting format was updated in November 2026 to address feedback from adopters and to improve consistency with the File Level Metadata and Data Dictionary reporting formats. The changes in v1.1.0 include:
+- Restructured the instructions file to reduce overlap with the guide documents.
+- Revised the structure of the quick and detailed guide to support ease of adoption.
+- Revised guidance for file and column or row names, units, missing value codes, and temporal and spatial data.
+- Updated guidance to include information for the v2.0.0 File Level Metadata reporting format.
 
 ## How to contribute
 
@@ -38,11 +35,7 @@ Funding for the development of ESS-DIVE's generic comma-separated values (CSV) t
 
 ## Recommended Citation
 
-Velliquette, T., Welch, J., Crow, M., Devarakonda, R., Heinz, S., Crystal-Ornelas, R. (2021). ESS-DIVE Reporting Format for Comma-separated Values (CSV) File Structure. Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE), ESS-DIVE Repository. https://doi.org/10.15485/1734841
-
-## Related Reference 
-
-McNelis, J., Crow, M., and Devarakonda, R., ESS-DIVE File Level Metadata Extractor. Computer Software. https://code.ornl.gov/ngee-arctic/ess-dive-meta. 01 Oct. 2020. Web. doi:10.11578/dc.20201103.5.  
+Velliquette, T., Welch, J., Crow, M., Devarakonda, R., Heinz, S., Crystal-Ornelas, R. (2021). ESS-DIVE Reporting Format for Comma-separated Values (CSV) File Structure. Environmental Systems Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE), ESS-DIVE Repository. https://doi.org/10.15485/1734841 
 
 ## References  
 
