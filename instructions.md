@@ -11,4 +11,4 @@
 - For any files following **only** the CSV File Formatting Guidelines, provide "ESS-DIVE CSV v1" in the `standard` term. If files are governed by another specific reporting format, follow the specific guidance specified in the reporting format documentation.
 
 ## Additional Guidance
-- If the data are initially saved in a different program (e.g., Excel), comply with the reporting format, convert the file to CSV, and resolve data inconsistencies and/or formatting problems (e.g., UTF-8 encoding errors).
+- If the data are initially saved in a different program (e.g., Excel), comply with the reporting format, convert the file to CSV, and resolve data inconsistencies and/or formatting problems (e.g., UTF-8 encoding errors, date and datetime formats).
