@@ -36,7 +36,7 @@
 - See column or row orientation guidance below.
 
 ### Column or Row Name Orientation  
-- The Data Matrix portion (i.e., tabular data section) of each file should contain a header Column or Row following the description under the "Column or Row Names" section of this reporting format. The Column or Row names will identify the type of information found in that Column or Row.
+- The Data Matrix portion (i.e., tabular data section) of each file should contain a header Column or Row following the specification in the "Column or Row Names" section of this reporting format.
 - Tabular data can be organized:
     - **Horizontally**, meaning that data are organized in rows and there's a new name describing the data at the start of every row
     - **Vertically**, meaning that data are organized in columns and there is a new column name describing the data at the top of every column.
@@ -50,13 +50,14 @@
 - Do not include spaces. Do not start with an underscore or hyphen.
 
 ### Column or Row Names  
-- Provide unique Column or Row names that convey basic information about the contents. Use only letters, numbers, hyphens, and underscores.
+- Provide unique Column or Row names. Use only letters, numbers, hyphens, and underscores. 
 - Do not include spaces or start with an underscore or hyphen. Avoid starting the column or row name with a number where possible.
 - We recommend snake_case and do not recommend CamelCase or starting your column or row names with a number.
+- Column or row names may contain information about the content in the column or row.
 
 ### Units  
 - Provide the units of measurement for the variable in one of the following ways:
-    - within the `unit` term from the [File Level Metadata Reporting Format’s Data Dictionary file](https://github.com/ess-dive-workspace/essdive-file-level-metadata/blob/main/data_dictionary_dd/term_guide.md#unit)
+    - (recommended) within the `unit` term from the [File Level Metadata Reporting Format’s Data Dictionary file](https://github.com/ess-dive-workspace/essdive-file-level-metadata/blob/main/data_dictionary_dd/term_guide.md#unit)
     - immediately below the Column Name as the next row or immediately adjacent to the Row Name as the next column
 - We recommend that you include units within the unit term in the Data Dictionary file; however, units can be included within the data file if necessary.
 
@@ -73,7 +74,7 @@
 - All cells in the data matrix must have a value. Cells with missing data must be represented with a missing value code.
 - If you are unclear on what missing value code to use for your data, we recommend using: 
     - "-9999" as the missing value code (or modify to match significant figures given the data) for Columns or Rows containing numeric data. 
-    - “N/A” as the missing value code for Columns or Rows containing character data. 
+    - “N/A” as the missing value code for Columns or Rows containing text data. 
 - Missing values must be represented by values that can never be construed as actual data and must be consistent across variables.
 
 
@@ -88,8 +89,10 @@
 - Temporal data ranges must comply with the Temporal Data section guidance (above).
 
 ### Spatial Data  
-- All geographic coordinates must be provided in WGS84 decimal format. 
-- Latitude and longitude must be provided as separate variables (i.e., in an adjacent field). 
-- Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field), but only in addition to the WGS84 decimal format. 
-For more specific guidance on providing spatial data and location metadata, review the [ESS-DIVE Location Metadata reporting format](https://github.com/ess-dive-workspace/essdive-location-metadata).
+- We recommend that spatial data be provided following the [ESS-DIVE Location Metadata reporting format](https://github.com/ess-dive-workspace/essdive-location-metadata) when possible.
+- In all other cases where the Location Metadata reporting format is not appropriate, the following guidance applies:
+    - All geographic coordinates must be provided in WGS84 decimal format.
+    - Latitude and longitude must be provided as separate variables (i.e., in an adjacent field).
+    - Spatial data using different standards can be provided as a separate variable (i.e., in an adjacent field), but only in addition to the WGS84 decimal format. 
+
 
